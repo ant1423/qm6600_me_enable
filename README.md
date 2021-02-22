@@ -3,7 +3,8 @@ ELSKY QM6600-2c enable Intel ME
 
 [website](http://www.miniboard.cn/product/?8_59.html)
 
-# How to
+# How to(just be careful)
+case 1:
 1. Download Flash Image Tool and Flash Programing Tool.
 
 2. dump the origin bios file. <br>
@@ -19,9 +20,26 @@ fpt -dump fulldump.rom
 ```
 fpt -rewrite -f fulldump-mod.rom
 ```
-or use the desc dump in this repository
+and then
+```
+fpt -greset
+```
+
+case 2(simple):
+use the desc dump in this repository
 ```
 fpt -rewrite -desc -f desc-mod.rom
+```
+and then
+```
+fpt -greset
+```
+
+
+case 3(simple):
+use the full dump in this repository
+```
+fpt -rewrite -f fulldump-mod.rom
 ```
 and then
 ```
