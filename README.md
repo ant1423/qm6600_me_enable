@@ -6,7 +6,7 @@ ELSKY QM6600-2c enable Intel ME
 # How to
 1. Download Flash Image Tool and Flash Programing Tool.
 
-2. dump the origin dedc file. <br>
+2. dump the origin desc file. <br>
 ```
 fpt -desc -dump desc.rom
 ```
