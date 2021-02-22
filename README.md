@@ -21,7 +21,7 @@ fpt -desc -dump desc.rom
 
 5. Flash Image > Descriptor Region > VSCC Table., add the spi infomation.default VSCC table contains 1F4700 (Atmel AT25DF321) and EF4017 (Winbond W25Q64).But actual spi is Winbond W25Q32, so add EF4016 to the VSCC Table.
 
-6. flash the modified dump file back.<br>
+6. flash the modified dump file back.one of them<br>
 
 full dump:
 ```
