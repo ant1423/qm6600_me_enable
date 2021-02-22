@@ -9,7 +9,7 @@ case 1:<br>
 
 2. dump the origin bios file. <br>
 ```
-fpt -dump fulldump.rom
+fpt -d fulldump.rom
 ```
 
 3. Flash Image Tool open the dump file. Flash Image > Descriptor Region > VSCC Table, add the spi infomation.default VSCC table contains 1F4700 (Atmel AT25DF321) and EF4017 (Winbond W25Q64).But actual spi is Winbond W25Q32, so add EF4016 to the VSCC Table.
