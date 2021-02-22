@@ -25,3 +25,4 @@ fpt -greset
 # Reference
 * https://github.com/corna/me_cleaner/issues/80
 * https://www.win-raid.com/t1658f39-Guide-Clean-Dumped-Intel-Engine-CS-ME-CS-TXE-Regions-with-Data-Initialization.html
+* https://github.com/mostav02/Remove_IntelME_FPT
