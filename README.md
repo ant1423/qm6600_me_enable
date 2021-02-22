@@ -21,30 +21,37 @@ fpt -dump fulldump.rom
 fpt -rewrite -f fulldump-mod.rom
 ```
 and then
+
 ```
 fpt -greset
 ```
-<br>
-case 2(simple):<br>
+
+<br>case 2(simple):<br>
 use the desc dump in this repository
+
 ```
 fpt -rewrite -desc -f desc-mod.rom
 ```
+
 and then
+
 ```
 fpt -greset
 ```
-<br>
-case 3(simple):<br>
+
+<br>case 3(simple):<br>
 use the full dump in this repository
+
 ```
 fpt -rewrite -f fulldump-mod.rom
 ```
+
 and then
+
 ```
 fpt -greset
 ```
-<br>
+
 # Reference
 * https://github.com/corna/me_cleaner/issues/80
 * https://www.win-raid.com/t1658f39-Guide-Clean-Dumped-Intel-Engine-CS-ME-CS-TXE-Regions-with-Data-Initialization.html
