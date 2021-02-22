@@ -6,14 +6,20 @@ ELSKY QM6600-2c enable Intel ME
 # How to
 1. Download Flash Image Tool and Flash Programing Tool.
 
-2. dump the origin desc file. <br>
+2. dump the origin bios file. <br>
 ```
-fpt -desc -dump desc.rom
+fpt -dump fulldump.rom
 ```
 
-3. Flash Image Tool open the desc dump file. Flash Image > Descriptor Region > VSCC Table, add the spi infomation.default VSCC table contains 1F4700 (Atmel AT25DF321) and EF4017 (Winbond W25Q64).But actual spi is Winbond W25Q32, so add EF4016 to the VSCC Table.
+3. Flash Image Tool open the dump file. Flash Image > Descriptor Region > VSCC Table, add the spi infomation.default VSCC table contains 1F4700 (Atmel AT25DF321) and EF4017 (Winbond W25Q64).But actual spi is Winbond W25Q32, so add EF4016 to the VSCC Table.
 
-4. flash the modified dump file back.<br>
+4. Flash Image Tool's Menu Build > Build Image, output is FITDIR\Build\outimage.bin, rename to fulldump-mod.rom
+
+5. flash the modified dump file back.<br>
+```
+fpt -rewrite -f fulldump-mod.rom
+```
+or use the desc dump in this repository
 ```
 fpt -rewrite -desc -f desc-mod.rom
 ```
